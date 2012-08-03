@@ -1,8 +1,8 @@
-var capsLock = require('../');
-capsLock.engage();
+var CAPSLOCK = require('../');
+CAPSLOCK.ENGAGE();
 
 console.log('you had better believe that caps lock is fucking engaged');
 
-capsLock.disengage();
+CAPSLOCK.DISENGAGE();
 
 console.log('what is this lowercase noise');

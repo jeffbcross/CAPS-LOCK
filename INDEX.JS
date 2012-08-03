@@ -1,37 +1,37 @@
-exports.engaged = false;
-exports.engage = function () {
-    exports.engaged = true;
+exports.ENGAGED = false;
+exports.ENGAGE = function () {
+    exports.ENGAGED = true;
 };
 
-exports.disengage = function () {
-    exports.engaged = false;
+exports.DISENGAGE = function () {
+    exports.ENGAGED = false;
 };
 
 (function () { try {
-    var Stream = require('net').Stream.prototype;
-    var write = Stream.write;
-    Stream.write = function () {
-        if (exports.engaged && typeof arguments[0] === 'string') {
+    var STREAM = require('net').Stream.prototype;
+    var WRITE = STREAM.write;
+    STREAM.write = function () {
+        if (exports.ENGAGED && typeof arguments[0] === 'string') {
             arguments[0] = arguments[0].toUpperCase();
         }
-        return write.apply(this, arguments);
+        return WRITE.apply(this, arguments);
     };
 } catch (e) {} })();
 
-var keys = Object.getOwnPropertyNames(String.prototype)
-    .filter(function (key) {
-        return [ 'toUpperCase', 'toLowerCase' ].indexOf(key) < 0;
+var KEYS = Object.getOwnPropertyNames(String.prototype)
+    .filter(function (KEY) {
+        return [ 'toUpperCase', 'toLowerCase' ].indexOf(KEY) < 0;
     })
 ;
 
-keys.forEach(function (key) {
-    var original = String.prototype[key];
+KEYS.forEach(function (KEY) {
+    var ORIGINAL = String.prototype[KEY];
     
-    String.prototype[key] = function () {
-        var res = original.apply(this, arguments);
-        if (exports.engaged && typeof res === 'string') {
-            return res.toUpperCase();
+    String.prototype[KEY] = function () {
+        var RES = ORIGINAL.apply(this, arguments);
+        if (exports.ENGAGED && typeof RES === 'string') {
+            return RES.toUpperCase();
         }
-        else return res;
+        else return RES;
     };
 });

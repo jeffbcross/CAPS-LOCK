@@ -1,0 +1,28 @@
+{
+    "name" : "CAPS-LOCK",
+    "version" : "0.0.0",
+    "description" : "CAPS LOCK FOR YOUR NODE PROGRAM",
+    "main" : "INDEX.JS",
+    "bin" : {},
+    "directories" : {
+        "example" : "EXAMPLE"
+    },
+    "repository" : {
+        "type" : "git",
+        "url" : "git://github.com/substack/CAPS-LOCK.git"
+    },
+    "homepage" : "https://github.com/substack/CAPS-LOCK",
+    "keywords" : [
+        "CAPSLOCK",
+        "CAPS",
+        "LOUD",
+        "ENGAGE",
+        "DISENGAGE"
+    ],
+    "author" : {
+        "name" : "James Halliday",
+        "email" : "mail@substack.net",
+        "url" : "http://substack.net"
+    },
+    "license" : "MIT"
+}

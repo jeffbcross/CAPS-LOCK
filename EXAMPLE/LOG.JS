@@ -1,3 +1,3 @@
-require('../').engage();
+require('../').ENGAGE();
 
 console.log('beep boop');
