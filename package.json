@@ -1,5 +1,5 @@
 {
-    "name" : "CAPS-LOCK",
+    "name" : "caps-lock",
     "version" : "0.0.0",
     "description" : "CAPS LOCK FOR YOUR NODE PROGRAM",
     "main" : "INDEX.JS",

@@ -7,7 +7,7 @@ THIS MODULE TURNS ON AND OFF CAPS LOCK IN YOUR JAVASCRIPT PROGRAM.
 ## LOG
 
 ``` js
-require('CAPS-LOCK').ENGAGE();
+require('caps-lock').ENGAGE();
 
 console.log('beep boop');
 ```
@@ -24,7 +24,7 @@ YOU CAN TURN CAPS LOCK OFF TOO BUT YOU SHOULD ONLY DO THAT SO YOU CAN TURN IT
 ON.
 
 ``` js
-var CAPSLOCK = require('CAPS-LOCK');
+var CAPSLOCK = require('caps-lock');
 CAPSLOCK.ENGAGE();
 
 console.log('you had better believe that caps lock is fucking engaged');
@@ -44,7 +44,7 @@ what is this lowercase noise
 ## HTTP SERVER
 
 ``` js
-require('CAPS-LOCK').ENGAGE();
+require('caps-lock').ENGAGE();
 
 var http = require('http');
 var server = http.createServer(function (req, res) {
@@ -65,7 +65,7 @@ BEEP BOOP: /ABCDEF
 WITH [NPM](HTTP://NPMJS.ORG) DO:
 
 ```
-npm install CAPS-LOCK
+npm install caps-lock
 ```
 
 # LICENSE
